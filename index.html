@@ -57,11 +57,25 @@
             justify-content: center;
             gap: 15px;
         }
-        .contact p {
-            margin: 5px 0;
-            font-size: 18px;
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
-        .contact a {
+        .contact-info p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #004aad;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .contact a.button {
             background-color: #28a745;
             color: white;
             padding: 12px 20px;
@@ -69,8 +83,9 @@
             display: inline-block;
             border-radius: 5px;
             font-size: 18px;
+            margin-top: 15px;
         }
-        .contact a:hover {
+        .contact a.button:hover {
             background-color: #218838;
         }
     </style>
@@ -96,9 +111,11 @@
         </div>
         <div class="section contact">
             <h2>Contact Me</h2>
-            <p><strong>Email:</strong> <a href="mailto:siemensnosaogbeide@gmail.com">siemensnosaogbeide@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/siemensogbeide" target="_blank">View Profile</a></p>
-            <a href="mailto:siemensnosaogbeide@gmail.com">Get in Touch</a>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:siemensnosaogbeide@gmail.com">siemensnosaogbeide@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/siemensogbeide" target="_blank">View Profile</a></p>
+            </div>
+            <a href="mailto:siemensnosaogbeide@gmail.com" class="button">Get in Touch</a>
         </div>
     </div>
 </body>
